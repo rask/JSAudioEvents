@@ -1,10 +1,10 @@
-# JSSoundEvents
+# JSAudioEvents
 
-JSSoundEvents is a small library for handling sound events in your web pages.
+JSAudioEvents is a small library for handling sound events in your web pages.
 
 ## Installation
 
-1.  Copy-paste the `jssoundevents.js` file and include it to your templates using
+1.  Copy-paste the `JSAudioEvents(.min).js` file and include it to your templates using
     basic `<script>` tags. No other library dependencies required.
 
 2.  Create `<audio>` elements on your page, and set their `data-soundsource` and
@@ -27,7 +27,7 @@ JSSoundEvents is a small library for handling sound events in your web pages.
 
 ## Inner workings
 
-JSSoundEvents operates on a simple principle: if there happens an `sound:somesound`
+JSAudioEvents operates on a simple principle: if there happens an `sound:somesound`
 event and a corresponding `audio` element is available, play the element's sound to
 the browser.
 
@@ -44,9 +44,11 @@ performant.
 
 ## Todo
 
+- Refactor from `JSSoundEvents` to `JSAudioEvents`.
 - Browser-compatibility hasn't been tested. Worked on the latest Firefox just fine.
 - Sound queuing system with timeouts to prevent sounds from playing too late or on
   top of each other.
+- Verify Bower workings and such.
 
 ## Contributing
 

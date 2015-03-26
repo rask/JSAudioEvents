@@ -5,7 +5,7 @@
     "Otto Rask <ojrask@gmail.com>"
   ],
   "description": "A small JavaScript library for playing audio when certain events occur.",
-  "main": "./dist/jsaudioevents.js",
+  "main": "./dist/JSAudioEvents.js",
   "keywords": [
     "audio",
     "javascript",
@@ -24,6 +24,7 @@
     "bower_components",
     "test",
     "tests",
-    "demo"
+    "demo",
+    "src"
   ]
 }

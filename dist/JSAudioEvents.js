@@ -13,7 +13,7 @@
 
 	'use strict';
 
-	window.JSSoundEvents = window.JSSoundEvents || {
+	window.JSAudioEvents = window.JSAudioEvents || {
 
 		// Collection of audio elements that can the used to play sounds.
 		audioElements: {},
@@ -27,7 +27,7 @@
 		// Startup. Called on DOMContentLoaded.
 		initialize: function()
 		{
-			self = window.JSSoundEvents;
+			self = window.JSAudioEvents;
 
 			console.log('init jsaudioevents');
 
@@ -83,6 +83,6 @@
 
 	};
 
-	document.addEventListener('DOMContentLoaded', window.JSSoundEvents.initialize);
+	document.addEventListener('DOMContentLoaded', window.JSAudioEvents.initialize);
 
 })(window, document);

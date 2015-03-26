@@ -1,9 +1,9 @@
 module.exports = function(grunt) {
-	
+
 	grunt.initConfig({
-	
+
 		pkg: grunt.file.readJSON('bower.json'),
-				
+
 		concat: {
 			options: {
 				separator: ';'
@@ -13,10 +13,10 @@ module.exports = function(grunt) {
 				dest: 'dist/<%= pkg.name %>.js'
 			}
 		},
-				
+
 		uglify: {
 			options: {
-				banner: '/* <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */'
+				banner: '/**\n * <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %>\n * <%= pkg.authors[0] %>\n * https://github.com/Rask/JSAudioEvents\n */\n'
 			},
 			dist: {
 				files: {
@@ -24,12 +24,12 @@ module.exports = function(grunt) {
 				}
 			}
 		}
-	
+
 	});
-	
+
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-concat');
-	
+
 	grunt.registerTask('default', ['concat', 'uglify']);
-	
+
 };

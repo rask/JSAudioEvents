@@ -1,0 +1,29 @@
+{
+  "name": "JSAudioEvents",
+  "version": "0.1.0",
+  "authors": [
+    "Otto Rask <ojrask@gmail.com>"
+  ],
+  "description": "A small JavaScript library for playing audio when certain events occur.",
+  "main": "./dist/jsaudioevents.js",
+  "keywords": [
+    "audio",
+    "javascript",
+    "event",
+    "trigger",
+    "sound"
+  ],
+  "license": "MIT",
+  "homepage": "TBA",
+  "ignore": [
+    "**/.*",
+    ".gitignore",
+    ".project",
+    ".settings",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "demo"
+  ]
+}

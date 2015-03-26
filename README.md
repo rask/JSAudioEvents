@@ -52,7 +52,12 @@ performant.
 
 ## Contributing
 
-Make a fork, create a topic branch, make a pull request.
+1.  Ensure you've got NPM and Grunt installed and operational.
+2.	Create a fork of this repository and clone to your development environment.
+3.	`$ npm install && grunt` to run designated Grunt tasks.
+4.	Create a topic branch, make additions, changes and fixes.
+5.	Push your changes back to your fork and make a pull request.
+6.  Changes will be reviewed and merged when appropriate.
 
 ## License
 

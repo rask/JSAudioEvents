@@ -4,7 +4,9 @@ JSAudioEvents is a small library for handling sound events in your web pages.
 
 ## Installation
 
-1.  Copy-paste the `JSAudioEvents(.min).js` file and include it to your templates using
+0.  `$ bower install JSAudioEvents`
+
+1.  Include the `dist/JSAudioEvents(.min).js` to your templates using
     basic `<script>` tags. No other library dependencies required.
 
 2.  Create `<audio>` elements on your page, and set their `data-soundsource` and

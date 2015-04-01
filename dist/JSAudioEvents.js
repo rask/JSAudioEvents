@@ -29,9 +29,7 @@
 		{
 			self = window.JSAudioEvents;
 
-			console.log('init jsaudioevents');
-
-			if (self.getAudioElements()) {
+			if (!self.getAudioElements()) {
 				return false;
 			}
 
@@ -49,29 +47,25 @@
 				var preload = els[i].getAttribute('preload');
 
 				if (preload == ('auto' | '')) {
-					self.audioElements[ els[i].dataset.soundsource ] = els[i];
+					self.audioElements[ els[i].dataset.audiosource ] = els[i];
 				}
 			}
 
-			return self.audioElements.length;
+			return Object.getOwnPropertyNames(self.audioElements).length;
 		},
 
 		addEventListeners: function()
 		{
 			for (var el in self.audioElements) {
 				var audioel = self.audioElements[el];
-				var soundsource = audioel.dataset.soundsource;
-				document.addEventListener('sound:' + soundsource, self.handleAudioEvent);
+				var audiosource = audioel.dataset.audiosource;
+				document.addEventListener('audio:' + audiosource, self.handleAudioEvent);
 			}
 		},
 
 		handleAudioEvent: function(evt)
 		{
-			console.log( evt );
-
-			var audio_type = evt.detail.sound;
-
-			console.log( self.audioElements[audio_type] );
+			var audio_type = evt.detail.audio;
 
 			if ( self.playLimitTimer === undefined ) {
 				self.audioElements[audio_type].play();

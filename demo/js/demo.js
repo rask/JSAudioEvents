@@ -23,13 +23,13 @@ window.jssedemo = {
 				var button = this.buttons[i];
 
 				button.addEventListener('click', function(evt) {
-					var sound = this.dataset.sound;
+					var sound = this.dataset.audio;
 
-					var sound_event = new CustomEvent('sound:' + sound, {
+					var sound_event = new CustomEvent('audio:' + sound, {
 						'bubbles': true,
 						'cancelable': true,
 						'detail': {
-							'sound': sound
+							'audio': sound
 						}
 					});
 

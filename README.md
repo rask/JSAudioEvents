@@ -1,5 +1,7 @@
 # JSAudioEvents
 
+***Not maintained, as the browser APIs and capabilities have changed and keep changing. This project is on hold for now, until the best approach can be ensured for this library.***
+
 JSAudioEvents is a small library for handling sound events in your web pages.
 
 ## Installation
